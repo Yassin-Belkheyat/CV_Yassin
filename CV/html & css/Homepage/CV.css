@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    height: 5vh;
+    justify-content: space-between;
+    background-color: black;
+}
+.nav{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.nav > ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 10px;
+    width: 85%;
+    justify-content: space-between;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+}
+.Container{
+    background-image: linear-gradient(rgba(76,27,116,0.7),#dbd1e3), url("../Images/Background.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+img{
+    clip-path: circle();
+    width: 110px;
+    height: 200px;
+}
+img:hover{
+    transform: rotate(5deg);
+    box-shadow: rgba(76,27,116, 0.4) 10px 10px, rgba(76,27,116, 0.3) 15px 15px, rgba(76,27,116, 0.2) 20px 20px, rgba(76,27,116, 0.1) 25px 25px, rgba(76,27,116, 0.05) 30px 30px;
+    border-radius: 100%;
+}
+.intro{
+    margin-top: 10vh;
+    margin-left: 10px;
+}
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+button{
+    background-color: white;
+}
+button > a{
+    text-decoration: none;
+    color: black;
+}
+.about-me{
+  margin-top: 10px;
+}
+.Obtained-degrees{
+     margin-top: 10vh;
+     margin-left: 250px;
+ }
+.Education{
+      margin-top: 10vh;
+      margin-left: 10px;
+  }
+.Education > ul{
+    list-style-type: none;
+}
+.Work-experience{
+     margin-top: 10vh;
+     margin-left: 10px;
+ }
+.Work-experience > ul{
+    list-style-type: none;
+}
+.languageknowledge > table {
+    width: 100vh;
+    height: 500px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: darkred;
+}
+.languageknowledge{
+    margin-top: 10vh;
+    margin-left: 10px
+}
+.even{
+    background-color: rgba(255,0,0,0.3);
+}
+.computerknowledge{
+    margin-top: 9vh;
+    margin-left: 10px;
+}
+.computerknowledge > table {
+    width: 100vh;
+    height: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.contact-information{
+    margin-top: 10vh;
+    margin-left: 10px;
+}
+.contact-information h2 a{
+    text-decoration: none;
+    color:black;
+}
