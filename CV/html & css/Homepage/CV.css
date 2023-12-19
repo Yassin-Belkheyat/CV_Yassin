@@ -10,31 +10,56 @@ nav{
     justify-content: space-between;
     background-color: black;
 }
-.nav{
+.nav-left{
     display: flex;
     height: 100%;
-    width: 100%;
+    width: 93%;
 }
-.nav > ul{
+.nav-left > ul{
     display: flex;
     list-style-type: none;
     padding: 0;
     margin-left: 10px;
-    width: 85%;
+    width: 30%;
     justify-content: space-between;
 }
-.nav a{
+.nav-left a{
     text-decoration: none;
     color: white;
 }
-.Container{
+.nav-right{
+    display: flex;
+    color: white;
+    width: 7%;
+    margin: 10px;
+
+}
+.nav-right > ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-between;
+}
+.nav-right ul li{
+    align-content: space-between;
+    width: 25px;
+    height:90px;
+}
+.nav-right ul li a{
+    text-decoration: none;
+    color: white;
+}
+.container{
     background-image: linear-gradient(rgba(76,27,116,0.7),#dbd1e3), url("../Images/Background.jpg");
     background-size: cover;
     width: 100%;
     height: 100vh;
     display: flex;
 }
-
+.about-me > h1{
+    margin-left: 10px;
+    margin-top: 10vh;
+}
 img{
     clip-path: circle();
     width: 110px;
@@ -44,10 +69,6 @@ img:hover{
     transform: rotate(5deg);
     box-shadow: rgba(76,27,116, 0.4) 10px 10px, rgba(76,27,116, 0.3) 15px 15px, rgba(76,27,116, 0.2) 20px 20px, rgba(76,27,116, 0.1) 25px 25px, rgba(76,27,116, 0.05) 30px 30px;
     border-radius: 100%;
-}
-.intro{
-    margin-top: 10vh;
-    margin-left: 10px;
 }
 footer{
     background-color: black;
@@ -63,29 +84,20 @@ button > a{
     color: black;
 }
 .about-me{
-  margin-top: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
 }
-.Obtained-degrees{
-     margin-top: 10vh;
-     margin-left: 250px;
- }
-.Education{
+.about-me > p{
+    margin-left: 10px;
+}
+.cards{
       margin-top: 10vh;
       margin-left: 10px;
+      display: flex;
   }
-.Education > ul{
-    list-style-type: none;
-}
-.Work-experience{
-     margin-top: 10vh;
-     margin-left: 10px;
- }
-.Work-experience > ul{
-    list-style-type: none;
-}
+
 .languageknowledge > table {
-    width: 100vh;
-    height: 500px;
     border-collapse: collapse;
     margin-top: 20px;
 }
@@ -98,27 +110,120 @@ th {
     background-color: darkred;
 }
 .languageknowledge{
-    margin-top: 10vh;
-    margin-left: 10px
+    display: flex;
+    flex-direction: column;
 }
 .even{
     background-color: rgba(255,0,0,0.3);
 }
 .computerknowledge{
-    margin-top: 9vh;
-    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
 }
 .computerknowledge > table {
-    width: 100vh;
-    height: 80%;
     border-collapse: collapse;
     margin-top: 20px;
+    flex-wrap: nowrap;
 }
-.contact-information{
-    margin-top: 10vh;
-    margin-left: 10px;
+
+.card{
+    width: 80px;
+    border-radius: 0.75rem 2rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.6s cubic-bezier(0.28,-0.03,0,0.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
 }
-.contact-information h2 a{
-    text-decoration: none;
-    color:black;
+.card > .row{
+    color: black;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.card > .row > .icon{
+    color:white;
+    border-radius: 10%;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 200px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p {
+    color: black;
+    padding-top: 10px;
+}
+
+.description h2 {
+    text-transform: uppercase;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="card-1"] {
+    background-image: url('../Images/logo_pxl_digital.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.card[for="card-2"] {
+    background-image: url('../Images/uhasselt-standaard.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.card[for="card-3"] {
+    background-image: url('../Images/logo-economie-it.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.card[for="card-4"] {
+    background-image: url('../Images/GO_Atheneum_Bree_logo.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.card[for="card-5"] {
+    background-image: url("../Images/logo-atheneum-2x-v3.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.card[for="card-6"]{
+    background-image: url("../Images/bruno-food-corner.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.card[for="card-7"]{
+    background-image: url("../Images/Greenyard.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.card[for="card-8"]{
+    background-image: url("../Images/EHBIT.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
