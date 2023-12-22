@@ -7,21 +7,23 @@
 nav{
     display: flex;
     height: 5vh;
+    width: 100%;
     justify-content: space-between;
     background-color: black;
 }
 .nav-left{
     display: flex;
     height: 100%;
-    width: 93%;
+    width: 80%;
 }
 .nav-left > ul{
     display: flex;
     list-style-type: none;
     padding: 0;
-    margin-left: 10px;
-    width: 30%;
+    margin: 10px;
+    width: 50%;
     justify-content: space-between;
+    font-family: Arial sans-serif;
 }
 .nav-left a{
     text-decoration: none;
@@ -30,7 +32,7 @@ nav{
 .nav-right{
     display: flex;
     color: white;
-    width: 7%;
+    width: 8%;
     margin: 10px;
 
 }
@@ -39,6 +41,7 @@ nav{
     list-style-type: none;
     padding: 0;
     justify-content: space-between;
+
 }
 .nav-right ul li{
     align-content: space-between;
@@ -55,6 +58,7 @@ nav{
     width: 100%;
     height: 100vh;
     display: flex;
+
 }
 .about-me > h1{
     margin-left: 10px;
@@ -75,6 +79,7 @@ footer{
     display: flex;
     justify-content: space-between;
     color: white;
+    font-family: Arial sans-serif;
 }
 button{
     background-color: white;
@@ -82,6 +87,7 @@ button{
 button > a{
     text-decoration: none;
     color: black;
+    font-family: Arial sans-serif;
 }
 .about-me{
     margin-top: 10px;
@@ -125,7 +131,6 @@ th {
     margin-top: 20px;
     flex-wrap: nowrap;
 }
-
 .card{
     width: 80px;
     border-radius: 0.75rem 2rem;
@@ -136,21 +141,12 @@ th {
     display: flex;
     align-items: flex-end;
     transition: 0.6s cubic-bezier(0.28,-0.03,0,0.99);
-    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+    box-shadow: 0 10px 30px -5px rgba(0,0,0,0.8);
 }
 .card > .row{
     color: black;
     display: flex;
     flex-wrap: nowrap;
-}
-.card > .row > .icon{
-    color:white;
-    border-radius: 10%;
-    width: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
 }
 .card > .row > .description {
     display: flex;
@@ -179,7 +175,7 @@ input {
 }
 
 input:checked + label {
-    width: 600px;
+    width: 530px;
 }
 
 input:checked + label .description {
@@ -194,7 +190,7 @@ input:checked + label .description {
 }
 .card[for="card-2"] {
     background-image: url('../Images/uhasselt-standaard.jpg');
-    background-size: 100%;
+    background-size: 90%;
     background-repeat: no-repeat;
 }
 .card[for="card-3"] {
@@ -226,4 +222,706 @@ input:checked + label .description {
     background-image: url("../Images/EHBIT.png");
     background-size: 100%;
     background-repeat: no-repeat;
+}
+@media only screen and (max-device-width: 600px){
+    nav{
+        display: flex;
+        height: 4vh;
+        justify-content: space-between;
+        background-color: black;
+        font-size: 30px;
+        font-family: Arial sans-serif;
+    }
+    .nav-left{
+        display: flex;
+        height: 100%;
+        width: 80%;
+    }
+    .nav-left > ul{
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 10px;
+        width: 80%;
+        justify-content: space-between;
+    }
+    .nav-left a{
+        text-decoration: none;
+        color: white;
+    }
+    .nav-right{
+        display: flex;
+        color: white;
+        width: 20%;
+        margin: 10px;
+
+    }
+    .nav-right > ul{
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        justify-content: space-between;
+    }
+    .nav-right ul li{
+        align-content: space-between;
+        width: 50px;
+        height:90px;
+    }
+    .nav-right ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    .container{
+        background-image: linear-gradient(rgba(76,27,116,0.7),#dbd1e3), url("../Images/Background.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        font-size: 30px;
+    }
+    .about-me > h1{
+        margin-left: 10px;
+        margin-top: 10vh;
+    }
+    img {
+        clip-path: circle();
+        width: 110px;
+        height: 200px;
+    }
+    img:hover{
+        transform: rotate(5deg);
+        box-shadow: rgba(76,27,116, 0.4) 10px 10px, rgba(76,27,116, 0.3) 15px 15px, rgba(76,27,116, 0.2) 20px 20px, rgba(76,27,116, 0.1) 25px 25px, rgba(76,27,116, 0.05) 30px 30px;
+        border-radius: 100%;
+    }
+    footer{
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        font-size: 30px;
+        font-family: Arial sans-serif;
+    }
+    button{
+        background-color: white;
+    }
+    button > a{
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        font-family: Arial sans-serif;
+    }
+    .about-me{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .about-me > p{
+        margin-left: 10px;
+    }
+    .cards{
+        margin-top: 10vh;
+        margin-left: 10px;
+        display: flex;
+    }
+
+    .languageknowledge > table {
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    th, td {
+        border: 1px solid;
+        padding: 8px;
+        text-align: center;
+    }
+    th {
+        background-color: darkred;
+    }
+    .languageknowledge{
+        display: flex;
+        flex-direction: column;
+    }
+    .even{
+        background-color: rgba(255,0,0,0.3);
+    }
+    .computerknowledge{
+        display: flex;
+        flex-direction: column;
+    }
+    .computerknowledge > table {
+        border-collapse: collapse;
+        margin-top: 20px;
+        flex-wrap: nowrap;
+    }
+
+    .card{
+        width: 80px;
+        border-radius: 0.75rem 2rem;
+        background-size: cover;
+        cursor: pointer;
+        overflow: hidden;
+        margin: 0 10px;
+        display: flex;
+        align-items: flex-end;
+        transition: 0.6s cubic-bezier(0.28,-0.03,0,0.99);
+        box-shadow: 0 10px 30px -5px rgba(0,0,0,0.8);
+    }
+    .card > .row{
+        color: black;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .card > .row > .description {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+        height: 540px;
+        width: 520px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition-delay: .3s;
+        transition: all .3s ease;
+        margin-left: 10px;
+    }
+
+    .description p {
+        color: black;
+        padding-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .description h2 {
+        text-transform: uppercase;
+        font-size: 27px;
+    }
+     .description h3{
+         font-size: 25px;
+         max-width: 450px;
+     }
+     .description h4{
+         font-size: 20px;
+         height: auto;
+         width: 400px;
+     }
+    input {
+        display: none;
+    }
+
+    input:checked + label {
+        width: 450px;
+    }
+
+    input:checked + label .description {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+
+    .card[for="card-1"] {
+        background-image: url('../Images/logo_pxl_digital.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .card[for="card-2"] {
+        background-image: url('../Images/uhasselt-standaard.jpg');
+        background-size: 90%;
+        background-repeat: no-repeat;
+    }
+    .card[for="card-3"] {
+        background-image: url('../Images/logo-economie-it.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .card[for="card-4"] {
+        background-image: url('../Images/GO_Atheneum_Bree_logo.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .card[for="card-5"] {
+        background-image: url("../Images/logo-atheneum-2x-v3.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .card[for="card-6"]{
+        background-image: url("../Images/bruno-food-corner.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .card[for="card-7"]{
+        background-image: url("../Images/Greenyard.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .card[for="card-8"]{
+        background-image: url("../Images/EHBIT.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
+@media only screen and (min-device-width: 760px) and (max-device-width: 1024px){
+    nav{
+        display: flex;
+        height: 7vh;
+        justify-content: space-between;
+        background-color: black;
+        font-size: 30px;
+        font-family: Arial sans-serif;
+    }
+    .nav-left{
+        display: flex;
+        height: 100%;
+        width: 80%;
+    }
+    .nav-left > ul{
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 10px;
+        width: 80%;
+        justify-content: space-between;
+    }
+    .nav-left a{
+        text-decoration: none;
+        color: white;
+    }
+    .nav-right{
+        display: flex;
+        color: white;
+        width: 20%;
+        margin: 10px;
+
+    }
+    .nav-right > ul{
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        justify-content: space-between;
+    }
+    .nav-right ul li{
+        align-content: space-between;
+        width: 50px;
+        height:90px;
+    }
+    .nav-right ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    .container{
+        background-image: linear-gradient(rgba(76,27,116,0.7),#dbd1e3), url("../Images/Background.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        font-size: 20px;
+    }
+    .about-me > h1{
+        margin-left: 10px;
+        margin-top: 10vh;
+    }
+    img{
+        clip-path: circle();
+        width: 110px;
+        height: 200px;
+    }
+    img:hover{
+        transform: rotate(5deg);
+        box-shadow: rgba(76,27,116, 0.4) 10px 10px, rgba(76,27,116, 0.3) 15px 15px, rgba(76,27,116, 0.2) 20px 20px, rgba(76,27,116, 0.1) 25px 25px, rgba(76,27,116, 0.05) 30px 30px;
+        border-radius: 100%;
+    }
+    footer{
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        font-size: 30px;
+        font-family: Arial sans-serif;
+    }
+    button{
+        background-color: white;
+    }
+    button > a{
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        font-family: Arial sans-serif;
+    }
+    .about-me{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .about-me > p{
+        margin-left: 10px;
+    }
+    .cards{
+        margin-top: 10vh;
+        margin-left: 10px;
+        display: flex;
+    }
+
+    .languageknowledge > table {
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    th, td {
+        border: 1px solid;
+        padding: 8px;
+        text-align: center;
+    }
+    th {
+        background-color: darkred;
+    }
+    .languageknowledge{
+        display: flex;
+        flex-direction: column;
+    }
+    .even{
+        background-color: rgba(255,0,0,0.3);
+    }
+    .computerknowledge{
+        display: flex;
+        flex-direction: column;
+    }
+    .computerknowledge > table {
+        border-collapse: collapse;
+        margin-top: 20px;
+        flex-wrap: nowrap;
+    }
+
+    .card{
+        width: 80px;
+        border-radius: 0.75rem 2rem;
+        background-size: cover;
+        cursor: pointer;
+        overflow: hidden;
+        margin: 0 10px;
+        display: flex;
+        align-items: flex-end;
+        transition: 0.6s cubic-bezier(0.28,-0.03,0,0.99);
+        box-shadow: 0 10px 30px -5px rgba(0,0,0,0.8);
+    }
+    .card > .row{
+        color: black;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .card > .row > .description {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+        height: 350px;
+        width: 520px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition-delay: .3s;
+        transition: all .3s ease;
+        margin-left: 10px;
+    }
+
+    .description p {
+        color: black;
+        padding-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .description h2 {
+        text-transform: uppercase;
+        font-size: 27px;
+    }
+    .description h3{
+        font-size: 25px;
+        max-width: 450px;
+    }
+    .description h4{
+        font-size: 20px;
+        height: auto;
+        width: 400px;
+    }
+    input {
+        display: none;
+    }
+
+    input:checked + label {
+        width: 450px;
+    }
+
+    input:checked + label .description {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+
+    .card[for="card-1"] {
+        background-image: url('../Images/logo_pxl_digital.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .card[for="card-2"] {
+        background-image: url('../Images/uhasselt-standaard.jpg');
+        background-size: 90%;
+        background-repeat: no-repeat;
+    }
+    .card[for="card-3"] {
+        background-image: url('../Images/logo-economie-it.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .card[for="card-4"] {
+        background-image: url('../Images/GO_Atheneum_Bree_logo.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .card[for="card-5"] {
+        background-image: url("../Images/logo-atheneum-2x-v3.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .card[for="card-6"]{
+        background-image: url("../Images/bruno-food-corner.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .card[for="card-7"]{
+        background-image: url("../Images/Greenyard.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .card[for="card-8"]{
+        background-image: url("../Images/EHBIT.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
+@media only screen and (min-device-width: 1440px) {
+    nav{
+        display: flex;
+        height: 4vh;
+        justify-content: space-between;
+        background-color: black;
+        font-size: 30px;
+        font-family: Arial sans-serif;
+    }
+    .nav-left{
+        display: flex;
+        height: 100%;
+        width: 60%;
+    }
+    .nav-left > ul{
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 5px;
+        width: 80%;
+        justify-content: space-between;
+    }
+    .nav-left a{
+        text-decoration: none;
+        color: white;
+    }
+    .nav-right{
+        display: flex;
+        color: white;
+        width: 12%;
+        margin: 5px;
+
+    }
+    .nav-right > ul{
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        justify-content: space-between;
+    }
+    .nav-right ul li{
+        align-content: space-between;
+        width: 50px;
+        height:90px;
+    }
+    .nav-right ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    .container{
+        background-image: linear-gradient(rgba(76,27,116,0.7),#dbd1e3), url("../Images/Background.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        font-size: 30px;
+    }
+    .about-me > h1{
+        margin-left: 10px;
+        margin-top: 10vh;
+    }
+    img{
+        clip-path: circle();
+        width: 110px;
+        height: 200px;
+    }
+    img:hover{
+        transform: rotate(5deg);
+        box-shadow: rgba(76,27,116, 0.4) 10px 10px, rgba(76,27,116, 0.3) 15px 15px, rgba(76,27,116, 0.2) 20px 20px, rgba(76,27,116, 0.1) 25px 25px, rgba(76,27,116, 0.05) 30px 30px;
+        border-radius: 100%;
+    }
+    footer{
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        font-size: 30px;
+        font-family: Arial sans-serif;
+    }
+    button{
+        background-color: white;
+    }
+    button > a{
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        font-family: Arial sans-serif;
+    }
+    .about-me{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .about-me > p{
+        margin-left: 10px;
+    }
+    .cards{
+        margin-top: 10vh;
+        margin-left: 10px;
+        display: flex;
+    }
+
+    .languageknowledge > table {
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    th, td {
+        border: 1px solid;
+        padding: 8px;
+        text-align: center;
+    }
+    th {
+        background-color: darkred;
+    }
+    .languageknowledge{
+        display: flex;
+        flex-direction: column;
+    }
+    .even{
+        background-color: rgba(255,0,0,0.3);
+    }
+    .computerknowledge{
+        display: flex;
+        flex-direction: column;
+    }
+    .computerknowledge > table {
+        border-collapse: collapse;
+        margin-top: 20px;
+        flex-wrap: nowrap;
+    }
+
+    .card{
+        width: 150px;
+        border-radius: 0.75rem 2rem;
+        background-size: cover;
+        cursor: pointer;
+        overflow: hidden;
+        margin: 0 10px;
+        display: flex;
+        align-items: flex-end;
+        transition: 0.6s cubic-bezier(0.28,-0.03,0,0.99);
+        box-shadow: 0 10px 30px -5px rgba(0,0,0,0.8);
+    }
+    .card > .row{
+        color: black;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .card > .row > .description {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+        height: 540px;
+        width: 520px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition-delay: .3s;
+        transition: all .3s ease;
+        margin-left: 10px;
+    }
+
+    .description p {
+        color: black;
+        padding-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .description h2 {
+        text-transform: uppercase;
+        font-size: 27px;
+    }
+    .description h3{
+        font-size: 25px;
+        max-width: 450px;
+    }
+    .description h4{
+        font-size: 20px;
+        height: auto;
+        width: 400px;
+    }
+    input {
+        display: none;
+    }
+
+    input:checked + label {
+        width: 450px;
+    }
+
+    input:checked + label .description {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+
+    .card[for="card-1"] {
+        background-image: url('../Images/logo_pxl_digital.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .card[for="card-2"] {
+        background-image: url('../Images/uhasselt-standaard.jpg');
+        background-size: 90%;
+        background-repeat: no-repeat;
+    }
+    .card[for="card-3"] {
+        background-image: url('../Images/logo-economie-it.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .card[for="card-4"] {
+        background-image: url('../Images/GO_Atheneum_Bree_logo.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .card[for="card-5"] {
+        background-image: url("../Images/logo-atheneum-2x-v3.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .card[for="card-6"]{
+        background-image: url("../Images/bruno-food-corner.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .card[for="card-7"]{
+        background-image: url("../Images/Greenyard.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .card[for="card-8"]{
+        background-image: url("../Images/EHBIT.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
 }
